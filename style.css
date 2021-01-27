@@ -1,0 +1,38 @@
+body{
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background{
+    background-image: linear-gradient(45deg, rgb(233, 106, 84), rgb(199, 219, 13));
+    border-radius: 20px;
+}
+.btn-color{
+    background-image: linear-gradient(-45deg, rgb(95, 42, 240), rgb(241, 15, 193));
+}
+.transaction-area{
+    display: none;
+}
+.common{
+    margin: 20px;
+    padding: 20px;
+    color:white;
+    border-radius: 10px;
+}
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
+.headerOfTrans{
+    background-image: linear-gradient(-90deg, rgb(149, 78, 231) , rgb(219, 152, 26));
+    color: white;
+    border-radius: 10px;
+    width: 65%;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+}

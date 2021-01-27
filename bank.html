@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Bank Limited</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="full-items">
+        <h2 class="text-center headerOfTrans mb-3">WELCOME TO AK BANK LIMITED</h2>
+        <div class="input-items shadow-lg p-5 background">
+            <h2 class="text-white">Login</h2>
+            <input class="form-control mt-4" type="text" placeholder="Email">
+            <input class="form-control mt-4" type="password" name="" placeholder="Password" id="">
+            <button id="btn" class="btn btn-color btn-danger mt-4">LOGIN</button>
+        </div>
+    </div>
+    <div id="transaction" class="transaction-area">
+        <h2 class="text-center headerOfTrans">TRANSACTION PART</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit common">
+                    <h4>Deposit</h4>
+                    <h1>$<span id="currentDeposit">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw common">
+                    <h4>Withdraw</h4>
+                    <h1>$ <span id="currentWithdraw">00</span></h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance common">
+                    <h4>Balance</h4>
+                    <h1>$ <span id="currentBalance">1250</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box1 mt-5 shadow background p-5">
+                    <h4 class="text-white">Deposit</h4>
+                    <input placeholder="Enter Deposit Amount" id='depositedAmount'  class="form-control" type="text"><br>
+                    <button id='depositBtn' class="btn btn-color btn-primary">DEPOSIT</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box1 mt-5 shadow background p-5">
+                    <h4 class="text-white">Withdraw</h4>
+                    <input placeholder="Enter Withdraw Amount" id="withdrawnAmount" class="form-control" type="text"><br>
+                    <button class="btn btn-color btn-primary" id="withdrawBtn">WITHDRAW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
