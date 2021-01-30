@@ -16,7 +16,7 @@
             <h2 class="text-white">Login</h2>
             <input class="form-control mt-4" type="text" placeholder="Email">
             <input class="form-control mt-4" type="password" name="" placeholder="Password" id="">
-            <button id="btn" class="btn btn-color btn-danger mt-4">LOGIN</button>
+            <button onclick="logInHide()" id="btn" class="btn btn-color btn-danger mt-4">LOGIN</button>
         </div>
     </div>
     <div id="transaction" class="transaction-area">
@@ -46,14 +46,14 @@
                 <div class="box1 mt-5 shadow background p-5">
                     <h4 class="text-white">Deposit</h4>
                     <input placeholder="Enter Deposit Amount" id='depositedAmount'  class="form-control" type="text"><br>
-                    <button id='depositBtn' class="btn btn-color btn-primary">DEPOSIT</button>
+                    <button onclick="addInputValue(true, 'depositedAmount', 'currentDeposit')" id='depositBtn' class="btn btn-color btn-primary">DEPOSIT</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="box1 mt-5 shadow background p-5">
                     <h4 class="text-white">Withdraw</h4>
                     <input placeholder="Enter Withdraw Amount" id="withdrawnAmount" class="form-control" type="text"><br>
-                    <button class="btn btn-color btn-primary" id="withdrawBtn">WITHDRAW</button>
+                    <button onclick="addInputValue(false, 'withdrawnAmount', 'currentWithdraw')" class="btn btn-color btn-primary" id="withdrawBtn">WITHDRAW</button>
                 </div>
             </div>
         </div>
